@@ -1,5 +1,17 @@
 # csontos_dekany_sztojka_projektmunka
 
+
+## Projektleírás
+
+Egy sulis projekt, amit C# nyelven készítünk el. A program egy egyszerűbb, konzolos alkalmazás lesz, amivel Magyarország lakosainak az adatait lehet kezelni és tárolni. 
+
+A szoftver lényege, hogy egy könnyen használható, menüs rendszert adjon az ügyintézőknek. A programban lehet majd új embereket regisztrálni a személyes adataikkal 
+(név, lakcím, személyi igazolvány szám, stb.), lehet keresni a lakosok között, és ha valaki elköltözik, át lehet írni a lakcímét. Az adatokat egy külön fájlba is el fogjuk menteni, hogy a program bezárása után se vesszenek el.
+
+**Fejlesztői környezet:** Visual Studio, C# (.NET 8.0)
+
+
+
 ## Feladatmegosztás (Csapattagok és szerepkörök)
 
 
