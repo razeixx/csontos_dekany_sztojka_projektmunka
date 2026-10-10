@@ -1,0 +1,1 @@
+# csontos_dekany_sztojka_projektmunka
