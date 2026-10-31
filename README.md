@@ -47,17 +47,7 @@ A munkavégzés megkönnyítése és az ütközések elkerülése érdekében se
 
 ## Kezdeti osztályterv
 
-**1. Hogyan épül fel a program**
-A program négy részre (rétegre) van osztva, és minden rész csak a mellette lévővel beszél. Az adatokat
-leíró osztályokat mindegyik rész használja.
-• Felület: ezt látja a felhasználó. Csak az adatok beírását és kiírását kezeli, szabályokat nem.
-• Szabályok és műveletek: itt dől el, mit szabad csinálni. Ide tartozik a személyek és címek
-kezelése, a keresés, a statisztika és a fájlba mentés.
-• Adatok elérése: ez menti, módosítja, keresi és törli az adatokat. A fölötte lévő rész nem tudja,
-hogy fájlból vagy adatbázisból jön az adat, ezért a tárolást később ki lehet cserélni.
-• Tárolás: maga a fájl (később akár adatbázis).
-
-**2 Helyek: régió, megye, járás, település**
+**1 Helyek: régió, megye, járás, település**
 A helyek így épülnek egymásra: egy régióhoz több megye tartozik, egy megyéhez több járás, egy
 járáshoz több település.
 Régió (`Regio`): egy nagyobb terület, például Észak-Alföld. Van azonosítója és neve, és több megye
@@ -73,7 +63,7 @@ Cím (`Cim`): egy konkrét hely: település, közterület neve (például Kossu
 út), házszám, emelet és ajtó. A cím nem tartozik senkihez, ezért több ember is lakhat ugyanazon a
 címen, és nem kell ugyanazt a címet többször eltárolni.
 
-**2.2 A személy és a lakcíme**
+**2 A személy és a lakcíme**
 Személyazonosító (`SzemelyAzonosito`): egy személy egyedi azonosítószáma. Külön osztály, mert az
 azonosítónak saját szabályai vannak (milyen alakú lehet, mikor érvényes), és ezeket így egy helyen lehet
 ellenőrizni. Létrehozás után nem változik, és két azonosító akkor egyezik, ha ugyanaz az értékük. Az ilyen
@@ -87,7 +77,7 @@ Lakcím (`Lakcim`): összeköti a személyt és a címet, és megjegyzi, mettől
 megmaradnak a régi címek is. A jelenlegi lakcím az, amelynek még nincs lezárva az ideje.
 Két egyszerű választható lista is kell: a nem (Nem) és a szerepkör (Szerepkor: admin, ügyintéző, olvasó).
 
-**2.3 Felhasználók és napló**
+**2.2 Felhasználók és napló**
 Felhasználó (`Felhasznalo`): aki a programot használja. Van felhasználóneve, jelszava (titkosítva tárolva)
 és szerepköre. Az admin mindent csinálhat, az ügyintéző adatot rögzít és módosít, az olvasó csak nézheti
 az adatokat.
