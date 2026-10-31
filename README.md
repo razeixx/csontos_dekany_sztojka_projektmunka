@@ -75,14 +75,6 @@ nevet, az anyja nevét, a születés helyét és idejét, a nemet, a telefonszá
 számolja ki a program. Van egy jelölő is arra, hogy a személy törölt-e (a törlés csak megjelölés, lásd lent).
 Lakcím (`Lakcim`): összeköti a személyt és a címet, és megjegyzi, mettől meddig lakott ott. Így
 megmaradnak a régi címek is. A jelenlegi lakcím az, amelynek még nincs lezárva az ideje.
-Két egyszerű választható lista is kell: a nem (Nem) és a szerepkör (Szerepkor: admin, ügyintéző, olvasó).
-
-**2.2 Felhasználók és napló**
-Felhasználó (`Felhasznalo`): aki a programot használja. Van felhasználóneve, jelszava (titkosítva tárolva)
-és szerepköre. Az admin mindent csinálhat, az ügyintéző adatot rögzít és módosít, az olvasó csak nézheti
-az adatokat.
-Naplóbejegyzés (`AuditBejegyzes`): minden módosításról készül egy jegyzet: ki, mikor, mit csinált, és
-melyik adaton. Ez az adatvédelem (GDPR) és az ellenőrizhetőség miatt kell.
 
 **3. A szabályokat és műveleteket végző osztályok**
 Ezek az osztályok végzik a tényleges munkát.
