@@ -4,7 +4,6 @@ namespace LakosNyilvantarto.Modellek
 {
     public enum Nem { Ferfi, No }
 
-    // Érték-objektum: létrehozás után nem változik.
     public class SzemelyAzonosito
     {
         public string Ertek { get; }
@@ -16,12 +15,9 @@ namespace LakosNyilvantarto.Modellek
             Ertek = ertek;
         }
 
-        // Két azonosító akkor egyezik, ha az értékük ugyanaz.
         public override bool Equals(object obj) =>
             obj is SzemelyAzonosito mas && mas.Ertek == Ertek;
 
-        // Kiszámol egyfajta számot az azonosítóból, és ezt később arra használja fel,
-        // hogy gyorsabban megtalálja a dolgokat.
         public override int GetHashCode() => Ertek.GetHashCode();
     }
 
@@ -39,7 +35,6 @@ namespace LakosNyilvantarto.Modellek
         public DateTime? HalalDatuma { get; set; }   // üres, ha még él
         public bool Torolt { get; set; }             // csak megjelölés
 
-        // Nem tároljuk, a dátumokból számolódik:
         public bool El
         {
             get { return HalalDatuma == null; }
@@ -55,7 +50,6 @@ namespace LakosNyilvantarto.Modellek
         }
     }
 }
-// if (ertek == null || ertek.Length != 11)
 // throw new ArgumentException("Érvénytelen azonosító.");
 // --> ez felel a hibás azonosítóért, hogy ne kerüljön senkihez
 
