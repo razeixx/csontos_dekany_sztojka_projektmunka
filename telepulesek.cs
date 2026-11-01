@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LakosNyilvantarto
 {
+    public Jaras SzuloJaras { get; set; }
     public enum TelepulesTipus { Fovaros, Varos, Kozseg }
 
     public class Telepules
