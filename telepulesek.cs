@@ -1,6 +1,10 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace LakosNyilvantarto.Modellek
+namespace LakosNyilvantarto
 {
     public enum TelepulesTipus { Fovaros, Varos, Kozseg }
 
