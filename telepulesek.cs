@@ -10,4 +10,4 @@ namespace LakosNyilvantarto.Modellek
         public string Iranyitoszam { get; set; }
         public TelepulesTipus Tipus { get; set; }
     }
-}telepu
+}
