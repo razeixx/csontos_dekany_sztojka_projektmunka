@@ -8,6 +8,7 @@ namespace LakossagNyilvantartas
 {
     internal class jaras
     {
+        public Megye SzuloMegye { get; set; }
         public class Jaras
         {
             public int Id { get; set; }
