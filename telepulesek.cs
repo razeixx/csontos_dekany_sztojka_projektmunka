@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LakosNyilvantarto
+namespace LakossagNyilvantartas
 {
     public Jaras SzuloJaras { get; set; }
     public enum TelepulesTipus { Fovaros, Varos, Kozseg }
