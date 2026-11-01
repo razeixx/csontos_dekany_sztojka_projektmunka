@@ -31,9 +31,9 @@ namespace LakosNyilvantarto.Modellek
         public string SzuletesiHely { get; set; }
         public DateTime SzuletesiDatum { get; set; }
         public Nem Nem { get; set; }
-        public string Telefonszam { get; set; }      // lehet üres
-        public DateTime? HalalDatuma { get; set; }   // üres, ha még él
-        public bool Torolt { get; set; }             // csak megjelölés
+        public string Telefonszam { get; set; }      
+        public DateTime? HalalDatuma { get; set; }   
+        public bool Torolt { get; set; }            
 
         public bool El
         {
@@ -50,9 +50,3 @@ namespace LakosNyilvantarto.Modellek
         }
     }
 }
-// throw new ArgumentException("Érvénytelen azonosító.");
-// --> ez felel a hibás azonosítóért, hogy ne kerüljön senkihez
-
-// Ertek = ertek;
-// --> 11 karakter hosszúságú azonosítót írtam, hogy később minden fiktív embernek jusson;
-//     ha nem éri el a 11 karaktert, hibát ír ki
