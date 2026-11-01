@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace LakosNyilvantarto
 {
+    public Telepules Lakhely { get; set; }
+    
     public enum Nem { Ferfi, No }
 
     public class SzemelyAzonosito
