@@ -9,6 +9,7 @@ namespace LakossagNyilvantartas
 {
     internal class megye
     {
+        public Regio SzuloRegio { get; set; }
         public class Megye { public int 
         Id { get; set; } 
         public string Nev { get; set; } 
