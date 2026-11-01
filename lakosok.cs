@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LakosNyilvantarto
+namespace LakossagNyilvantartas
 {
     public Telepules Lakhely { get; set; }
     
