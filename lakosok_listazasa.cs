@@ -6,21 +6,29 @@ using System.Threading.Tasks;
 
 namespace LakossagNyilvantartas
 {
-    public class Lakos
+    public class LakosListazas
     {
-        public List<lakosság> Lakosok { get; set; }
+        public List<Lakossag> Lakosok { get; set; }
 
-        public Lakos()
+        // Konstruktor
+        public LakosListazas(List<Lakossag> lakosok)
         {
-            Lakosok = new List<lakosság>();
+            Lakosok = lakosok;
         }
 
-        // Lakosok listázása
+        // Lakosok adatainak listázása
         public void Listazas()
         {
-            foreach (lakosság lakos in Lakosok)
+            foreach (Lakossag lakos in Lakosok)
             {
-                Console.WriteLine(lakos.Nev);
+                Console.WriteLine("--------------------");
+                Console.WriteLine($"Azonosító: {lakos.Azonosito}");
+                Console.WriteLine($"Név: {lakos.Nev}");
+                Console.WriteLine($"Születési dátum: {lakos.SzuletesiDatum}");
+                Console.WriteLine($"Nem: {lakos.Nem}");
+                Console.WriteLine($"Település: {lakos.Telepules}");
+                Console.WriteLine($"Irányítószám: {lakos.Iranyitoszam}");
+                Console.WriteLine($"Lakcím: {lakos.Lakcim}");
             }
         }
     }
