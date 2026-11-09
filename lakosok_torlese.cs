@@ -1,29 +1,29 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LakossagNyilvantartas
 {
     public class LakosTorles
     {
-        public List<Lakossag> Lakosok { get; set; }
+        public List<Szemely> Lakosok { get; set; }
 
-        // Konstruktor
-        public LakosTorles(List<Lakossag> lakosok)
+    
+        public LakosTorles(List<Szemely> lakosok)
         {
             Lakosok = lakosok;
         }
 
-        // Lakos törlése azonosító alapján
+
         public void Torles(string azonosito)
         {
-            Lakossag torlendo = Lakosok.Find(x => x.Azonosito == azonosito);
+            Szemely torlendo = Lakosok.FirstOrDefault(
+                x => x.Azonosito.Ertek == azonosito && !x.Torolt
+            );
 
             if (torlendo != null)
             {
-                Lakosok.Remove(torlendo);
+                torlendo.Torolt = true;
                 Console.WriteLine("A lakos sikeresen törölve!");
             }
             else
