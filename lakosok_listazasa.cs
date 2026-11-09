@@ -7,13 +7,13 @@ namespace LakossagNyilvantartas
     {
         public List<Szemely> Lakosok { get; set; }
 
-        // Konstruktor
+ 
         public LakosListazas(List<Szemely> lakosok)
         {
             Lakosok = lakosok;
         }
 
-        // Lakosok listázása
+   
         public void Listazas()
         {
             foreach (Szemely lakos in Lakosok)
