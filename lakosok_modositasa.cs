@@ -21,6 +21,17 @@ namespace LakossagNyilvantartas
 
             if (modositando != null)
             {
+                modositando.VezetekNev = modositottAdatok.VezetekNev;
+                modositando.KeresztNev = modositottAdatok.KeresztNev;
+                modositando.SzuletesiNev = modositottAdatok.SzuletesiNev;
+                modositando.AnyjaNeve = modositottAdatok.AnyjaNeve;
+                modositando.SzuletesiHely = modositottAdatok.SzuletesiHely;
+                modositando.SzuletesiDatum = modositottAdatok.SzuletesiDatum;
+                modositando.Nem = modositottAdatok.Nem;
+                modositando.Telefonszam = modositottAdatok.Telefonszam;
+                modositando.Lakhely = modositottAdatok.Lakhely;
+                modositando.HalalDatuma = modositottAdatok.HalalDatuma;
+
                 Console.WriteLine("A lakos adatai sikeresen módosítva!");
             }
             else
